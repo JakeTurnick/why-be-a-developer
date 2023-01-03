@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 5vw;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+section {
+    padding: 5vw;
+    margin: auto;
+    background-color: aqua;
+    width: 80vw;
+    display: grid;
+    grid-template-areas: 
+        "tag tag img"
+        "blurb blurb img";
+}
+
+.tag {
+    grid-area: tag;
+}
+
+p {
+    grid-area: blurb;
+}
+
+img {
+    height: 128px;
+    width: 192px;
+    grid-area: img;
+}
